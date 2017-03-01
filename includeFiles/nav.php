@@ -22,8 +22,6 @@
      }
      print '>Watched</a></li>';
      ?>
-     <!-- <li id='hidden-menu-border'><a class="current" href="main.php">Currently Watching</a></li>
-     <li><a href="watched.php">Watched</a></li> -->
      <li><a href="https://myanimelist.net/" target="_blank">My Anime List</a></li>
      <li><a href="http://anichart.net/airing" target="_blank">Anichart</a></li>
   </ul>
