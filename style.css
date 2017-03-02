@@ -183,6 +183,38 @@ body
     text-align: center;
     margin: auto;
   }
+  .nameRow
+  {
+    width: 75%;
+  }
+  .txtSearch
+  {
+    width: 51%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .searchBtn
+  {
+    background-color: #4286f4;
+    color: white;
+    width: 8%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+  }
+  .searchBtn:hover
+  {
+    background-color: #3872d1;
+  }
   .addText
   {
     width: 60%;
