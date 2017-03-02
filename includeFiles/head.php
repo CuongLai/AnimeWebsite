@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Currently Watching - Personal Site</title>
+  <title>Personal Anime Site</title>
   <meta charset="utf-8">
   <meta name="author" content="Cuong Lai">
   <meta name="description" content="My personal stuff">

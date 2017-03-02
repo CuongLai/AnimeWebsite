@@ -6,17 +6,27 @@ print '<body>';
 $currentPage = 'addAnime';
 include 'includeFiles/nav.php';
 include 'includeFiles/script.php';
-?>
 
-<form method="post">
-<h3>Enter the anime's name</h3><input type="text" name="name" placeholder="Anime name" value="<?php if(isset($_POST['name'])){ echo $_POST['name'];}?>"/>
-<h3>Enter the KissAnime URL</h3><input type="text" name="kiss" placeholder="KissAnime URL" value="<?php if(isset($_POST['kiss'])){ echo $_POST['kiss'];}?>"/>
-<h3>Enter the Crunchyroll URL</h3><input type="text" name="crunchy" placeholder="Crunchyroll URL" value="<?php if(isset($_POST['crunchy'])){ echo $_POST['crunchy'];}?>"/>
-<h3>Enter the MyAnimeList URL</h3><input type="text" name="mal" placeholder="MAL URL" value="<?php if(isset($_POST['mal'])){ echo $_POST['mal'];}?>"/>
+print '<div class="content">';
+?>
+<div class="top">
+  <p class="title">Add an anime</p>
+</div>
+<form method="post"><div class="btnDiv">
+<p class="addLabel">Anime name</p><input type="text" name="name" class="addText" placeholder="Anime name" value="<?php if(isset($_POST['name'])){ echo $_POST['name'];}?>"/>
+<p class="addLabel">KissAnime URL</p><input type="text" name="kiss" class="addText" placeholder="KissAnime URL" value="<?php if(isset($_POST['kiss'])){ echo $_POST['kiss'];}?>"/>
+<p class="addLabel">Crunchyroll URL</p><input type="text" name="crunchy" class="addText" placeholder="Crunchyroll URL" value="<?php if(isset($_POST['crunchy'])){ echo $_POST['crunchy'];}?>"/>
+<p class="addLabel">MyAnimeList URL</p><input type="text" name="mal" class="addText" placeholder="MAL URL" value="<?php if(isset($_POST['mal'])){ echo $_POST['mal'];}?>"/>
 <input type="submit" name="submit" value="Add" class="button">
-</form>
+<input type="submit" name="back" value="Cancel" class="button">
+</div></form>
 
 <?php
+if (isset($_POST["back"]))
+{
+  header("Location:watched.php");
+  exit;
+}
 if (isset($_POST["submit"]))
 {
   $conn = new mysqli($server, $username, $password, $dbname);
@@ -70,6 +80,7 @@ if (isset($_POST["submit"]))
     echo 'You cannot leave the name blank.';
   }
 }
+print '</div>';
 print '</body>';
 include 'includeFiles/footer.php';
 ?>

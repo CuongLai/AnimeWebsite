@@ -19,10 +19,14 @@ $result = $conn->query($query);
 
 
 print '<div class="content">';
+
+print '<div class="top"><p class="title">Completed anime</p></div>';
+
 print '<form method="post">';
-// print '<input type="text" name="search" placeholder="Search watched anime"'
-print '<input type="submit" name="submit" value="Add an anime" class="button">';
+print '<div class="btnDiv">';
+print '<input type="submit" name="submit" value="Add an anime" class="button"></div>';
 print '</form>';
+
 if (isset($_POST[submit]))
 {
   header("Location:addAnime.php");
@@ -34,7 +38,6 @@ if ($result->num_rows > 0)
 {
   while($row = $result->fetch_assoc())
   {
-    //kissanime = 0, crunchyroll=1
     print '<tr>';
     print '<td>' . $row["fldAnimeName"] . '</td>';
     print '<td>';
@@ -58,8 +61,6 @@ if ($result->num_rows > 0)
 }
 
 print '</body>';
-
 include 'includeFiles/footer.php'
 ?>
-
 </html>
