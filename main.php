@@ -1,4 +1,6 @@
-<?php include 'includeFiles/head.php' ?>
+<?php
+include 'includeFiles/head.php';
+?>
 
 <body>
 

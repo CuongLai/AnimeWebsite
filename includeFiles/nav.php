@@ -20,6 +20,10 @@
      {
        print ' class="current" ';
      }
+     if ($currentPage == 'addAnime')
+     {
+       print ' class="current" ';
+     }
      print '>Watched</a></li>';
      ?>
      <li><a href="https://myanimelist.net/" target="_blank">My Anime List</a></li>
