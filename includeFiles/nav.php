@@ -1,11 +1,23 @@
 <div class="hidden-menu">
-  <a href="#" class="toggle-nav-btn"><img src='images/menu.png' alt='menu'></a>
+  <a href="#" class="toggle-nav-btn">
+    <svg width="27" height="27">
+      <path d="M0, 5 27, 5" stroke="#000" stroke-width="3" />
+      <path d="M0, 13 27, 13" stroke="#000" stroke-width="3" />
+      <path d="M0, 21 27, 21" stroke="#000" stroke-width="3" />
+    </svg>
+  </a>
   <a href="main.php" class="logo2"><img src="images/logo.png" alt="logo"></a>
 </div>
 <nav class="toggle hidden">
   <ul>
      <a href="main.php" class="logo"><img src="images/logo.png" alt="logo"></a>
-     <a href='#' class='exit-btn'><img src='images/exitbtn.png' alt='exitbtn'></a>
+     <a href='#' class='exit-btn'>
+       <svg width="27" height="27">
+         <path d="M0, 5 27, 5" stroke="#000" stroke-width="3" />
+         <path d="M0, 13 27, 13" stroke="#000" stroke-width="3" />
+         <path d="M0, 21 27, 21" stroke="#000" stroke-width="3" />
+       </svg>
+     </a>
 
      <?php
      print '<li><a href="main.php "';
